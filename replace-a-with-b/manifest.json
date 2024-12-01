@@ -1,0 +1,15 @@
+
+{
+    "manifest_version": 3,
+    "name": "A to B Replacer",
+    "version": "1.0",
+    "description": "Replaces all 'a's with 'b's while preserving UI",
+    "permissions": ["scripting"],
+    "host_permissions": ["<all_urls>"],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
